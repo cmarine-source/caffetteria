@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffetteria Artigianale | Menu</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .menu-item:hover img {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            transition: transform 0.3s ease;
+        }
+        .menu-category {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="bg-[#f5f0e6] text-[#3a3226]">
+    <!-- Navigation -->
+    <nav class="bg-[#3a3226] text-[#f5f0e6] sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold">Caffè Artigiano</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-[#a38b5e] transition">Home</a>
+                    <a href="#" class="text-[#a38b5e] transition">Menu</a>
+                    <a href="gallery.html" class="hover:text-[#a38b5e] transition">Galleria</a>
+                    <a href="contact.html" class="hover:text-[#a38b5e] transition">Contatti</a>
+                </div>
+                <button class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="py-16 bg-[#3a3226] text-white text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Il nostro menu</h1>
+            <p class="text-xl max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Scopri le nostre specialità artigianali preparate con ingredienti di alta qualità e tanta passione.</p>
+        </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <div class="sticky top-16 bg-[#e8e1d3] shadow-sm z-40">
+        <div class="container mx-auto px-6">
+            <div class="flex overflow-x-auto py-4 space-x-6">
+                <a href="#caffe" class="whitespace-nowrap px-4 py-2 rounded-full bg-[#3a3226] text-white">Caffè</a>
+                <a href="#bevande" class="whitespace-nowrap px-4 py-2 rounded-full hover:bg-[#3a3226] hover:text-white transition">Bevande</a>
+                <a href="#colazione" class="whitespace-nowrap px-4 py-2 rounded-full hover:bg-[#3a3226] hover:text-white transition">Colazione</a>
+                <a href="#dolci" class="whitespace-nowrap px-4 py-2 rounded-full hover:bg-[#3a3226] hover:text-white transition">Dolci</a>
+                <a href="#salato" class="whitespace-nowrap px-4 py-2 rounded-full hover:bg-[#3a3226] hover:text-white transition">Salato</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Content -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <!-- Caffè Section -->
+            <div id="caffe" class="menu-category mb-20">
+                <h2 class="text-3xl font-bold mb-10 pb-4 border-b border-[#3a3226]" data-aos="fade-up">Caffè</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Item 1 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+                        <div class="w-1/3">
+                            <img src="https://sprudge.com/wp-content/uploads/2014/10/Ditta-Artigianale-Florence-Italy-30-740x494.jpg" alt="Espresso Artigianale" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Espresso Artigianale</h3>
+                            <p class="text-gray-600 mb-4">Il nostro espresso premium, con note di cioccolato e frutti di bosco.</p>
+                            <p class="text-[#8b0000] font-bold">€2.50</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-1/3">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.VY_M0EN8y1m3Lm1kZlIy0AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cappuccino Classico" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Cappuccino Classico</h3>
+                            <p class="text-gray-600 mb-4">Perfetto equilibrio tra espresso, latte e schiuma vaporizzata.</p>
+                            <p class="text-[#8b0000] font-bold">€3.50</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+                        <div class="w-1/3">
+                            <img src="https://parade.com/.image/t_share/MTk1MzA0NTgyOTIwODA3NzM4/what-is-a-macchiato.jpg" alt="Macchiato" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Macchiato</h3>
+                            <p class="text-gray-600 mb-4">Espresso con un tocco di latte vaporizzato.</p>
+                            <p class="text-[#8b0000] font-bold">€2.80</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-1/3">
+                            <img src="https://cdn.shopify.com/s/files/1/1221/3516/articles/latte-art-on-mocha.jpg?v=1660069726" alt="Mocha" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Mocha</h3>
+                            <p class="text-gray-600 mb-4">Espresso, cioccolato e latte vaporizzato, completato con panna.</p>
+                            <p class="text-[#8b0000] font-bold">€4.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bevande Section -->
+            <div id="bevande" class="menu-category mb-20">
+                <h2 class="text-3xl font-bold mb-10 pb-4 border-b border-[#3a3226]" data-aos="fade-up">Bevande</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Item 1 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+                        <div class="w-1/3">
+                            <img src="https://www.leitv.it/wp-content/uploads/2013/09/tea.jpg?v=149941" alt="Tè Artigianale" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Tè Artigianale</h3>
+                            <p class="text-gray-600 mb-4">Selezione di tè pregiati da tutto il mondo.</p>
+                            <p class="text-[#8b0000] font-bold">€3.00</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-1/3">
+                            <img src="https://th.bing.com/th/id/R.6fdc73be520f4a707870cdf2ea0aeb6c?rik=jkiFvzt6OqjCWg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-xtJnKXtzZvk%2fVUjpICzPybI%2fAAAAAAAAAiE%2fUHzCPki99ME%2fs1600%2fcioccolata-calda-bimby.jpg&ehk=PLPPOHX%2bQDUO8NEENlAV77nJL95eHgZQMOrRA66iRhk%3d&risl=&pid=ImgRaw&r=0" alt="Cioccolata Calda" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Cioccolata Calda</h3>
+                            <p class="text-gray-600 mb-4">Preparata con cioccolato fondente di alta qualità.</p>
+                            <p class="text-[#8b0000] font-bold">€4.00</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+                        <div class="w-1/3">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.3BZDSWtpIMplSv_MGmnqkwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Spremuta d'Arancia" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Spremuta d'Arancia</h3>
+                            <p class="text-gray-600 mb-4">Fresca e preparata al momento con arance biologiche.</p>
+                            <p class="text-[#8b0000] font-bold">€4.50</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-1/3">
+                            <img src="https://www.tictac.it/blog/wp-content/uploads/2025/04/acqua-minerale-etichetta.webp" alt="Acqua Minerale" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Acqua Minerale</h3>
+                            <p class="text-gray-600 mb-4">Naturale o frizzante, 50cl.</p>
+                            <p class="text-[#8b0000] font-bold">€1.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colazione Section -->
+            <div id="colazione" class="menu-category mb-20">
+                <h2 class="text-3xl font-bold mb-10 pb-4 border-b border-[#3a3226]" data-aos="fade-up">Colazione</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Item 1 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+                        <div class="w-1/3">
+                            <img src="https://www.gelofood.com/wp-content/uploads/2022/06/cornetti-linea-oro-gelofood.jpg" alt="Cornetto Classico" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Cornetto Classico</h3>
+                            <p class="text-gray-600 mb-4">Fatto in casa ogni mattina con burro di alta qualità.</p>
+                            <p class="text-[#8b0000] font-bold">€2.00</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-1/3">
+                            <img src="https://i.pinimg.com/originals/50/1e/67/501e67ada932f351a867aaf069ae181f.jpg" alt="Cornetto alla Crema" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Cornetto alla Crema</h3>
+                            <p class="text-gray-600 mb-4">Ripieno di crema pasticcera fatta in casa.</p>
+                            <p class="text-[#8b0000] font-bold">€2.50</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+                        <div class="w-1/3">
+                            <img src="https://th.bing.com/th/id/R.f2e83bff6322f04f544d4c8ebd606fe3?rik=uWTEoyi%2bPpCioA&riu=http%3a%2f%2fgateaux-et-delices.com%2fwp-content%2fuploads%2f2015%2f10%2fBrioche-Buchty-fourr%c3%a9e-au-Nutella1.jpg&ehk=M4hKkrfjkYdiLsaV66ICcRcXVOyS7xh3l9icvs4E0eI%3d&risl=&pid=ImgRaw&r=0" alt="Brioche alla Nutella" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Brioche alla Nutella</h3>
+                            <p class="text-gray-600 mb-4">Sofficissima brioche farcita con Nutella.</p>
+                            <p class="text-[#8b0000] font-bold">€2.80</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-1/3">
+                            <img src="https://engp-bng7bhajchf0axex.z02.azurefd.net/media/Recipes/coppetta_di_frutta_e_yogurt_002-Edit_u8TNL3d.jpg" alt="Yogurt con Frutta" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Yogurt con Frutta</h3>
+                            <p class="text-gray-600 mb-4">Yogurt greco con muesli e frutta fresca di stagione.</p>
+                            <p class="text-[#8b0000] font-bold">€5.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dolci Section -->
+            <div id="dolci" class="menu-category mb-20">
+                <h2 class="text-3xl font-bold mb-10 pb-4 border-b border-[#3a3226]" data-aos="fade-up">Dolci</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Item 1 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+                        <div class="w-1/3">
+                            <img src="https://cdn.cook.stbm.it/thumbnails/ricette/9/9648/9648.JPG" alt="Tiramisù Classico" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Tiramisù Classico</h3>
+                            <p class="text-gray-600 mb-4">La nostra ricetta tradizionale con caffè artigianale.</p>
+                            <p class="text-[#8b0000] font-bold">€5.00</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-1/3">
+                            <img src="https://primochef.it/wp-content/uploads/2023/05/DP_cheesecake_ai_frutti_di_bosco.jpg" alt="Cheesecake ai Frutti di Bosco" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Cheesecake ai Frutti di Bosco</h3>
+                            <p class="text-gray-600 mb-4">Base di biscotti, crema al formaggio e topping di frutti di bosco.</p>
+                            <p class="text-[#8b0000] font-bold">€5.50</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+                        <div class="w-1/3">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.wXCUdkyO83zPxhAQ3wLxBQHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Torta della Nonna" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Torta della Nonna</h3>
+                            <p class="text-gray-600 mb-4">Pasta frolla, crema pasticcera e pinoli.</p>
+                            <p class="text-[#8b0000] font-bold">€4.50</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-1/3">
+                            <img src="https://tse1.mm.bing.net/th/id/OIP.qxryXsq15C1kK5T42Ug3TQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Crostata di Marmellata" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Crostata di Marmellata</h3>
+                            <p class="text-gray-600 mb-4">Pasta frolla con marmellata fatta in casa.</p>
+                            <p class="text-[#8b0000] font-bold">€4.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salato Section -->
+            <div id="salato" class="menu-category">
+                <h2 class="text-3xl font-bold mb-10 pb-4 border-b border-[#3a3226]" data-aos="fade-up">Salato</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Item 1 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+                        <div class="w-1/3">
+                            <img src="https://metropolitanmagazine.it/wp-content/uploads/2024/06/Panino-prosciutto-cotto-e-pate-di-carciofi-1.webp" alt="Panino con Prosciutto" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Panino con Prosciutto</h3>
+                            <p class="text-gray-600 mb-4">Pane fresco, prosciutto crudo di alta qualità e burro.</p>
+                            <p class="text-[#8b0000] font-bold">€6.00</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-1/3">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.9_Ls5ElL2prihWLzFr8kXwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tramezzino" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Tramezzino</h3>
+                            <p class="text-gray-600 mb-4">Pane soffice farcito a scelta tra tonno, prosciutto o vegetariano.</p>
+                            <p class="text-[#8b0000] font-bold">€4.50</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+                        <div class="w-1/3">
+                            <img src="https://www.fattoincasadabenedetta.it/wp-content/uploads/2021/06/SITO-.-28-Insalata-di-quinoa-con-verdure.jpg" alt="Insalata di Quinoa" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Insalata di Quinoa</h3>
+                            <p class="text-gray-600 mb-4">Quinoa, verdure fresche, avocado e dressing al limone.</p>
+                            <p class="text-[#8b0000] font-bold">€8.00</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-1/3">
+                            <img src="https://th.bing.com/th/id/R.a1bb7c69880522f9adc4b6c3b1a2ba08?rik=h1ldrn%2fowInHzw&riu=http%3a%2f%2fwww.flavourofitaly.net%2fblog%2fwp-content%2fuploads%2f2016%2f08%2fpiadina-2.jpg&ehk=23iRQaN6v5hCLtqjMxV3umgfVQPgZBoLJrbEH9kGfds%3d&risl=&pid=ImgRaw&r=0" alt="Piadina" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-2/3 p-6">
+                            <h3 class="text-xl font-bold mb-2">Piadina</h3>
+                            <p class="text-gray-600 mb-4">Piadina romagnola farcita a scelta tra squacquerone e rucola o prosciutto e stracchino.</p>
+                            <p class="text-[#8b0000] font-bold">€6.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2a2216] text-[#f5f0e6] py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Caffè Artigiano</h3>
+                    <p>Dal 1985, passione e tradizione in ogni tazza.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Orari</h3>
+                    <p>Lun-Ven: 7:00 - 19:00</p>
+                    <p>Sab-Dom: 8:00 - 20:00</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contatti</h3>
+                    <p>Via del Caffè, 123</p>
+                    <p>10100 Torino, Italia</p>
+                    <p>+39 011 1234567</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Seguici</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-[#a38b5e] transition"><i data-feather="facebook"></i></a>
+                        <a href="#" class="hover:text-[#a38b5e] transition"><i data-feather="instagram"></i></a>
+                        <a href="#" class="hover:text-[#a38b5e] transition"><i data-feather="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-[#3a3226] mt-12 pt-8 text-center">
+                <p>&copy; 2023 Caffè Artigiano. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
