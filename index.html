@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffetteria Artigianale | Home</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('http://static.photos/food/1200x630/10');
+            background-size: cover;
+            background-position: center;
+        }
+        .menu-item:hover img {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            transition: transform 0.3s ease;
+        }
+        .star-filled {
+            color: #fcd34d; /* yellow-400 */
+        }
+    </style>
+</head>
+<body class="bg-[#f5f0e6] text-[#3a3226]">
+    <nav class="bg-[#3a3226] text-[#f5f0e6] sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">Caffè Artigiano</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="hover:text-[#a38b5e] transition">Home</a>
+                    <a href="menu.html" class="hover:text-[#a38b5e] transition">Menu</a>
+                    <a href="gallery.html" class="hover:text-[#a38b5e] transition">Galleria</a>
+                    <a href="contact.html" class="hover:text-[#a38b5e] transition">Contatti</a>
+                </div>
+                <button class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-image h-screen flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">L'arte del caffè artigianale</h1>
+            <p class="text-xl md:text-2xl mb-8">Dal 1985, passione e tradizione in ogni tazza</p>
+            <a href="menu.html" class="bg-[#8b0000] hover:bg-[#6b0000] text-white px-8 py-3 rounded-full text-lg font-medium transition duration-300 inline-block">Scopri il menu</a>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="https://www.aromaniac.cz/_next/image/?url=%2Fstatic%2Fassets%2Fimages%2Fbackgrounds%2Fcafe-chill.png&w=1080&q=90" alt="Caffè artigianale" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6">La nostra storia</h2>
+                    <p class="text-lg mb-6">Fondata nel cuore della città, la nostra caffetteria rappresenta l'eccellenza del caffè artigianale. Ogni chicco viene selezionato con cura e tostato secondo antiche tradizioni.</p>
+                    <p class="text-lg">I nostri maestri caffettieri combinano sapientemente arte e scienza per portare in ogni tazza un'esperienza unica e memorabile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-[#e8e1d3]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Alcune delle nostre specialità</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up">
+                    <img src="https://sprudge.com/wp-content/uploads/2014/10/Ditta-Artigianale-Florence-Italy-30-740x494.jpg" alt="Espresso Artigianale" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Espresso Artigianale</h3>
+                        <p class="text-gray-600 mb-4">Il nostro espresso premium, con note di cioccolato e frutti di bosco.</p>
+                        <p class="text-[#8b0000] font-bold">€2.50</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.VY_M0EN8y1m3Lm1kZlIy0AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cappuccino Classico" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cappuccino Classico</h3>
+                        <p class="text-gray-600 mb-4">Perfetto equilibrio tra espresso, latte e schiuma vaporizzata.</p>
+                        <p class="text-[#8b0000] font-bold">€3.50</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://www.gelofood.com/wp-content/uploads/2022/06/cornetti-linea-oro-gelofood.jpg" alt="Cornetto Artigianale" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cornetto Artigianale</h3>
+                        <p class="text-gray-600 mb-4">Fatto in casa ogni mattina con burro di alta qualità.</p>
+                        <p class="text-[#8b0000] font-bold">€2.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="menu.html" class="bg-[#3a3226] hover:bg-[#2a2216] text-white px-8 py-3 rounded-full text-lg font-medium transition duration-300 inline-block">Vedi tutto il menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Cosa dicono i nostri clienti</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up">
+                    <div class="flex items-center mb-4 text-2xl star-filled">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span class="text-gray-300">★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Il miglior caffè che abbia mai bevuto in città. L'atmosfera è incredibile e il personale molto cordiale."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/100x100/1" alt="Marco" class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Marco</h4>
+                            <p class="text-sm text-gray-500">Cliente abituale</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4 text-2xl star-filled">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Adoro venire qui la domenica mattina. I cornetti sono divini e il cappuccino è sempre perfetto."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/100x100/2" alt="Laura" class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Laura</h4>
+                            <p class="text-sm text-gray-500">Cliente dal 2018</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4 text-2xl star-filled">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span class="text-gray-300">★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Ho provato molti caffè in giro per il mondo, ma questo posto ha qualcosa di speciale. Tornerò sicuramente!"</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/100x100/3" alt="Giovanni" class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Giovanni</h4>
+                            <p class="text-sm text-gray-500">Turista</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-[#3a3226] text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Pronto a vivere l'esperienza del vero caffè artigianale?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Vieni a trovarci e scopri perché il nostro caffè è così speciale.</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="contact.html" class="bg-[#8b0000] hover:bg-[#6b0000] text-white px-8 py-3 rounded-full text-lg font-medium transition duration-300 inline-block" data-aos="fade-up" data-aos-delay="200">Contattaci</a>
+                <a href="https://maps.google.com" target="_blank" class="bg-transparent hover:bg-white hover:text-[#3a3226] text-white border-2 border-white px-8 py-3 rounded-full text-lg font-medium transition duration-300 inline-block" data-aos="fade-up" data-aos-delay="300">Come raggiungerci</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#2a2216] text-[#f5f0e6] py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Caffè Artigiano</h3>
+                    <p>Dal 1985, passione e tradizione in ogni tazza.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Orari</h3>
+                    <p>Lun-Ven: 7:00 - 19:00</p>
+                    <p>Sab-Dom: 8:00 - 20:00</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contatti</h3>
+                    <p>Via del Caffè, 123</p>
+                    <p>10100 Torino, Italia</p>
+                    <p>+39 011 1234567</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Seguici</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-[#a38b5e] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="hover:text-[#a38b5e] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="hover:text-[#a38b50] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-[#3a3226] mt-12 pt-8 text-center">
+                <p>© 2023 Caffè Artigiano. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>
